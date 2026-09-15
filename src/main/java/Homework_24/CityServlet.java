@@ -16,7 +16,7 @@ import java.time.format.DateTimeFormatter;
 public class CityServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
-        res.setContentType("text/html");
+        res.setContentType("text/html; charset=UTF-8");
         ZoneId minskTime = ZoneId.of("Europe/Minsk");
         ZoneId washingtonTime = ZoneId.of("America/New_York");
         ZoneId beijingTime = ZoneId.of("Asia/Shanghai");
